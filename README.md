@@ -5,7 +5,7 @@ animações leves ao rolar (framer-motion) e botão flutuante de WhatsApp.
 
 ## Stack
 
-- React 19 + Vite
+- React 19 + TypeScript + Vite
 - Tailwind CSS v4
 - framer-motion (animações de entrada ao rolar a página)
 - react-icons (ícones do WhatsApp, Instagram e e-mail)
@@ -53,7 +53,7 @@ src/data/content.json
 
 Basta abrir esse arquivo, alterar o texto desejado (nome, textos das seções,
 perguntas do FAQ, links de contato etc.) e salvar. A página é atualizada
-automaticamente — não é necessário mexer em nenhum componente `.jsx`.
+automaticamente — não é necessário mexer em nenhum componente `.tsx`.
 
 ## Onde colocar as imagens
 
@@ -70,14 +70,14 @@ src/
   data/
     content.json        → todos os textos do site (editar aqui)
   components/
-    Navbar.jsx           → menu fixo com links âncora
-    Hero.jsx              → seção inicial
-    Diferencial.jsx       → seção "Qual meu diferencial?"
-    Atendimento.jsx       → seção "Como serão nossos encontros?"
-    Faq.jsx                → perguntas frequentes (lista simples)
-    Contato.jsx            → seção final + rodapé (WhatsApp, Instagram, e-mail)
-    WhatsAppButton.jsx     → botão flutuante fixo, sempre visível
-    Reveal.jsx              → wrapper de animação (fade + slide ao entrar na tela)
+    Navbar.tsx           → menu fixo com links âncora
+    Hero.tsx              → seção inicial
+    Diferencial.tsx       → seção "Qual meu diferencial?"
+    Atendimento.tsx       → seção "Como serão nossos encontros?"
+    Faq.tsx                → perguntas frequentes (lista simples)
+    Contato.tsx            → seção final + rodapé (WhatsApp, Instagram, e-mail)
+    WhatsAppButton.tsx     → botão flutuante fixo, sempre visível
+    Reveal.tsx              → wrapper de animação (fade + slide ao entrar na tela)
 public/
   images/                → imagens do site (placeholders inclusos)
 ```

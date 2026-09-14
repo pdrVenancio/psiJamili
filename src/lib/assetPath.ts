@@ -1,4 +1,4 @@
-export function assetPath(path) {
+export function assetPath(path: string): string {
   if (!path || /^(https?:|mailto:|tel:|#)/.test(path)) {
     return path;
   }

@@ -3,8 +3,9 @@ import Reveal from "./Reveal";
 import content from "../data/content.json";
 
 export default function Contato() {
-  const { titulo, texto, whatsapp, instagram, email } = content.contato;
+  const { titulo, texto, whatsapp, instagram, email, git } = content.contato;
   const { nome, crp } = content.profissional;
+  const currentYear: number = new Date().getFullYear();
 
   return (
     <section id="contato" className="bg-azul py-24 text-branco">
@@ -46,6 +47,24 @@ export default function Contato() {
           {nome} — {crp}
         </p>
         <p className="mt-1">{content.footer.texto}</p>
+      </div>
+
+      <div className="mx-auto mt-10 max-w-6xl border-t border-branco/10 px-6 pt-8 text-center text-xs text-branco/50">
+        <p className="font-mono text-sm text-muted-foreground">
+          {"<"} Desenvolvido com{" "}
+          <span className="text-primary">♥ por </span> 
+          
+          <a
+            href={git}
+            target="_blank"
+            rel=""
+          >
+            Pedro Venâncio
+          </a>{"/>"}
+        </p>
+        <p className="text-xs text-muted-foreground/50 mt-2">
+          © {currentYear} — Todos os direitos reservados
+        </p>
       </div>
     </section>
   );

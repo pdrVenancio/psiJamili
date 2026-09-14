@@ -1,8 +1,15 @@
 import { motion } from "framer-motion";
+import type { ReactNode } from "react";
+
+interface RevealProps {
+  children: ReactNode;
+  className?: string;
+  delay?: number;
+}
 
 // Single, consistent reveal used once per section — deliberately restrained
 // rather than animating every child element individually.
-export default function Reveal({ children, className = "", delay = 0 }) {
+export default function Reveal({ children, className = "", delay = 0 }: RevealProps) {
   return (
     <motion.div
       className={className}
