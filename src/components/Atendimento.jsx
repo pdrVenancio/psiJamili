@@ -1,5 +1,6 @@
 import Reveal from "./Reveal";
 import content from "../data/content.json";
+import { assetPath } from "../lib/assetPath";
 
 export default function Atendimento() {
   const { titulo, texto, imagem } = content.atendimento;
@@ -26,7 +27,7 @@ export default function Atendimento() {
         <div className="relative mx-auto w-full max-w-xs">
           {/* IMAGEM: sessão online / videochamada */}
           <img
-            src={imagem}
+            src={assetPath(imagem)}
             alt="Sessão de terapia online por videochamada"
             className="aspect-square w-full rounded-[2rem] object-cover"
           />

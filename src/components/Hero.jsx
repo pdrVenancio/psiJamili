@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import content from "../data/content.json";
+import { assetPath } from "../lib/assetPath";
 
 export default function Hero() {
   const { saudacao, titulo, texto, frase, cta, imagem } = content.hero;
@@ -42,7 +43,7 @@ export default function Hero() {
           <div className="absolute -left-4 -top-4 h-full w-full rounded-[2rem] border border-dourado-escuro/40" />
           {/* IMAGEM: foto da psicóloga (retrato) */}
           <img
-            src={imagem}
+            src={assetPath(imagem)}
             alt="Retrato de Jamili Naely Ferreira"
             className="relative h-full w-full rounded-[2rem] object-cover shadow-sm"
           />

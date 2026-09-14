@@ -1,5 +1,6 @@
 import Reveal from "./Reveal";
 import content from "../data/content.json";
+import { assetPath } from "../lib/assetPath";
 
 export default function Diferencial() {
   const { titulo, texto, formacao, imagem } = content.diferencial;
@@ -10,7 +11,7 @@ export default function Diferencial() {
         <div className="relative mx-auto w-full max-w-xs">
           {/* IMAGEM: foto secundária / atendimento */}
           <img
-            src={imagem}
+            src={assetPath(imagem)}
             alt="Jamili Naely Ferreira em atendimento"
             className="aspect-[3/4] w-full rounded-[2rem] object-cover"
           />
