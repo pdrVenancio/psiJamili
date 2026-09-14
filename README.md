@@ -16,7 +16,7 @@ Pré-requisito: [Node.js](https://nodejs.org/) 18 ou superior instalado.
 
 ```bash
 # 1. Entrar na pasta do projeto
-cd psi-jamili-landing
+cd psiJamili
 
 # 2. Instalar as dependências
 npm install
